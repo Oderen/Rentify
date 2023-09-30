@@ -1,15 +1,31 @@
 {
   "files": {
-    "main.css": "/renty/static/css/main.073c9b0a.css",
-    "main.js": "/renty/static/js/main.7e72a70e.js",
-    "static/js/787.757e74e5.chunk.js": "/renty/static/js/787.757e74e5.chunk.js",
-    "index.html": "/renty/index.html",
-    "main.073c9b0a.css.map": "/renty/static/css/main.073c9b0a.css.map",
-    "main.7e72a70e.js.map": "/renty/static/js/main.7e72a70e.js.map",
-    "787.757e74e5.chunk.js.map": "/renty/static/js/787.757e74e5.chunk.js.map"
+    "main.css": "/rentify/static/css/main.0266ae0e.css",
+    "main.js": "/rentify/static/js/main.2669f018.js",
+    "static/js/277.6b18812c.chunk.js": "/rentify/static/js/277.6b18812c.chunk.js",
+    "static/css/896.a34beeba.chunk.css": "/rentify/static/css/896.a34beeba.chunk.css",
+    "static/js/896.d3491114.chunk.js": "/rentify/static/js/896.d3491114.chunk.js",
+    "static/css/202.76e64720.chunk.css": "/rentify/static/css/202.76e64720.chunk.css",
+    "static/js/202.a24e7089.chunk.js": "/rentify/static/js/202.a24e7089.chunk.js",
+    "static/js/14.3f891e60.chunk.js": "/rentify/static/js/14.3f891e60.chunk.js",
+    "static/js/913.30bb55e2.chunk.js": "/rentify/static/js/913.30bb55e2.chunk.js",
+    "static/media/2022-Bugatti-Chiron-Super-Sport-2-1.avif": "/rentify/static/media/2022-Bugatti-Chiron-Super-Sport-2-1.0e7ffed254df9b6dfbde.avif",
+    "static/media/2023-lucid-air-1.jpg": "/rentify/static/media/2023-lucid-air-1.fdb168a278f0f81c3151.jpg",
+    "static/media/10-porsche-718-cayman-gt4-rs-top-10.webp": "/rentify/static/media/10-porsche-718-cayman-gt4-rs-top-10.a6cc767076d3dfcc4aa9.webp",
+    "static/media/2023-tesla-model-x-101-1671475309.jpeg": "/rentify/static/media/2023-tesla-model-x-101-1671475309.b14ae4beff78ccf2d15a.jpeg",
+    "index.html": "/rentify/index.html",
+    "main.0266ae0e.css.map": "/rentify/static/css/main.0266ae0e.css.map",
+    "main.2669f018.js.map": "/rentify/static/js/main.2669f018.js.map",
+    "277.6b18812c.chunk.js.map": "/rentify/static/js/277.6b18812c.chunk.js.map",
+    "896.a34beeba.chunk.css.map": "/rentify/static/css/896.a34beeba.chunk.css.map",
+    "896.d3491114.chunk.js.map": "/rentify/static/js/896.d3491114.chunk.js.map",
+    "202.76e64720.chunk.css.map": "/rentify/static/css/202.76e64720.chunk.css.map",
+    "202.a24e7089.chunk.js.map": "/rentify/static/js/202.a24e7089.chunk.js.map",
+    "14.3f891e60.chunk.js.map": "/rentify/static/js/14.3f891e60.chunk.js.map",
+    "913.30bb55e2.chunk.js.map": "/rentify/static/js/913.30bb55e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7e72a70e.js"
+    "static/css/main.0266ae0e.css",
+    "static/js/main.2669f018.js"
   ]
 }

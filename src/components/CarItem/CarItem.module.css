@@ -1,0 +1,167 @@
+.item {
+  position: relative;
+  width: 284px;
+  height: 450px;
+
+  padding: 5px;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+
+  margin-top: 21px;
+  transition: all 250ms linear;
+  border-radius: 14px;
+}
+
+.item:hover,
+.item:focus {
+  box-shadow: 1px -2px 10px 7px rgba(0, 0, 0, 0.2);
+}
+
+.item:nth-child(-n + 4) {
+  margin-top: 0px;
+}
+
+.item__image {
+  position: relative;
+  width: 100%;
+  height: 268px;
+  background: linear-gradient(
+      180deg,
+      rgba(18, 20, 23, 0.5) 2.5%,
+      rgba(18, 20, 23, 0) 41.07%
+    ),
+    lightgray 50% cover no-repeat;
+  border-radius: 14px;
+}
+
+.likeBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 18px;
+  height: 18px;
+  padding: 0px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.item__icon {
+  width: 100%;
+  height: 100%;
+
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 250ms linear;
+}
+
+.liked {
+  color: var(--button-bg-color);
+}
+
+.item__icon--liked {
+  color: var(--button-bg-color);
+}
+
+.item__icon--not-liked {
+  color: var(--heart-outline-color);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.title__text {
+  margin: 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.title__text--accent {
+  color: var(--button-bg-color);
+}
+
+.description {
+  margin-top: 8px;
+}
+
+.description__text {
+  margin-left: 6px;
+
+  color: var(--card--details-text--color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.item__button {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 274px;
+  height: 44px;
+
+  padding: 12px 99px;
+
+  background-color: var(--button-bg-color);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.item__button:hover,
+.item__button:focus {
+  background-color: var(--accent-button-bg-color);
+}
+
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 4px;
+}
+
+.info__item {
+  margin-top: 4px;
+}
+
+.info__details {
+  margin: 0px;
+
+  color: var(--card--details-text--color);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.info__details:not(:last-child) {
+  border-right: 1px solid var(--card--details-text--color);
+  padding-right: 6px;
+}
+
+.info__list > .info__item:not(:first-child) {
+  border-left: 1px solid var(--card--details-text--color);
+  padding-left: 6px;
+}
+
+.info__item:not(:last-child) {
+  margin-right: 6px;
+}

@@ -1,0 +1,15 @@
+.catalog {
+  width: 100%;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 29px;
+
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}

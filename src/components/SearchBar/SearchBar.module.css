@@ -1,0 +1,271 @@
+.form {
+  /* position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.resetBtn {
+  position: absolute;
+  left: 15.5%;
+
+  width: max-content;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 26px;
+  margin-right: 10px;
+  background-color: transparent;
+  outline: 1px solid rgba(18, 20, 23, 1);
+  color: rgba(18, 20, 23, 1);
+  cursor: pointer;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  transition: all 250ms linear;
+}
+
+.resetBtn:hover,
+.resetBtn:focus {
+  color: var(--button-bg-color);
+  outline: 1px solid var(--button-bg-color);
+}
+
+.form__label {
+  position: relative;
+  color: var(--description-text-color);
+}
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  transform: scale(0.2);
+  opacity: 0;
+
+  overflow-y: scroll;
+
+  padding: 14px 50px 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(18, 20, 23, 0.05);
+
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+
+  transition: all 250ms linear;
+}
+
+.menu::-webkit-scrollbar {
+  width: 8px;
+  margin-block: 14px;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+
+.menu::-webkit-scrollbar-track {
+  width: 8px;
+  border-radius: 10px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(18, 20, 23, 0.05);
+  transition: background-color 250ms linear;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(18, 20, 23, 0.2);
+}
+
+.menuBrd {
+  width: 224px;
+  height: 272px;
+}
+
+.menuBrd::-webkit-scrollbar-track {
+  height: 130px;
+}
+
+.menu__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.menu__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.menu__text:hover,
+.menu__text:focus {
+  color: var(--primary-text-color);
+}
+
+.menu__button {
+  width: max-content;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.menuPrc {
+  width: 125px;
+  height: 188px;
+}
+
+.menuPrc::-webkit-scrollbar-track {
+  height: 66px;
+}
+
+.active {
+  top: 78.4px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.inputContainer {
+  position: relative;
+  margin-right: 18px;
+  overflow: hidden;
+}
+
+.inputContainer__input {
+  width: 100%;
+  height: 48px;
+  padding: 14px 18px;
+  margin-top: 8px;
+  background-color: var(--field-bg--color);
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  cursor: text;
+}
+
+.inputContainer__input::placeholder {
+  color: var(--primary-text-color);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.inputContainer__button {
+  position: absolute;
+  top: 23px;
+  right: 18px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.inputContainer__icon {
+  width: 100%;
+  height: 100%;
+
+  color: var(--primary-text-color);
+
+  transition: all 200ms linear;
+}
+
+.inputContainer__rotatedIcon {
+  transform: rotate(180deg);
+}
+
+.carBrand {
+  width: 224px;
+}
+
+.carBrand__input {
+  padding: 14px 45px 14px 18px;
+}
+
+.price {
+  width: 125px;
+}
+
+.price__input {
+  padding: 14px 40px 14px 18px;
+}
+
+.mileage {
+  display: flex;
+}
+
+.mileage__inputs {
+  width: 160px;
+  height: 48px;
+  padding-top: 14px;
+  padding-right: 15px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+
+  background-color: var(--field-bg--color);
+  border: none;
+  outline: none;
+  cursor: text;
+}
+
+.mileage__inputs::placeholder {
+  color: var(--primary-text-color);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.mileage__inputs__from {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
+}
+
+.mileage__inputs__to {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 136px;
+  height: 48px;
+  padding: 14px 44px;
+  margin-top: auto;
+
+  color: var(--primary-bg-color);
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  transition: background-color 250ms linear;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: var(--accent-button-bg-color);
+}

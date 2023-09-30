@@ -1,0 +1,259 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: auto;
+
+  width: 541px;
+  height: 752px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 24px;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal__button {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__icon {
+  width: 100%;
+  height: 100%;
+  transition: all 250ms linear;
+}
+
+.modal__icon:hover,
+.modal__icon:focus {
+  color: var(--button-bg-color);
+}
+
+.photoContainer {
+  width: 461px;
+  height: 248px;
+  background-color: gray;
+  border-radius: 14px;
+}
+
+.photoContainer__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.info {
+  margin-top: 14px;
+}
+
+.info__title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.info__title--accent {
+  color: var(--button-bg-color);
+}
+
+.info__details {
+  margin-top: 0px;
+
+  color: var(--card--details-text--color);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__item {
+  margin-top: 4px;
+}
+
+.info__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.info__list > .info__item:not(:first-child) {
+  border-left: 1px solid var(--card--details-text--color);
+  padding-left: 6px;
+}
+
+.info__list > .info__item:nth-child(7) {
+  border: none;
+  padding-left: 0px;
+}
+
+.info__description {
+  margin-top: 14px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.accessories {
+  margin-top: 24px;
+}
+
+.accessories__title {
+  margin-top: 0px;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.accessories__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.accessories__item {
+  margin-left: 6px;
+}
+
+.accessories__item:first-child {
+  margin-left: 0px;
+}
+
+.accessories__list > .accessories__item:not(:first-child) {
+  border-left: 1px solid var(--card--details-text--color);
+  padding-left: 6px;
+}
+
+.accessories__list > .accessories__item:nth-child(5) {
+  margin-left: 0px;
+  padding-left: 0px;
+  border: none;
+}
+
+.accessories__item:nth-child(n + 5) {
+  margin-top: 4px;
+}
+
+.accessories__details {
+  margin: 0px;
+
+  color: var(--card--details-text--color);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.rentalConditions {
+  margin-top: 24px;
+}
+
+.rentalConditions__title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.rentalConditions__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.rentalConditions__item {
+  width: max-content;
+  height: 32px;
+
+  margin: 8px 8px 0px 0px;
+  padding: 7px 14px;
+
+  background-color: #f9f9f9;
+  border-radius: 35px;
+}
+
+.rentalConditions__text {
+  margin: 0px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+}
+
+.rentalConditions__text--accent {
+  color: var(--button-bg-color);
+  font-weight: 600;
+}
+
+.rental__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 168px;
+  height: 44px;
+
+  margin-top: 24px;
+  padding: 12px 50px;
+
+  color: #fff;
+  background-color: var(--button-bg-color);
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.rental__link:hover,
+.rental__link:focus {
+  background-color: var(--accent-button-bg-color);
+}

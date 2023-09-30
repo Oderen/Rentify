@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-bg-color: #fff;
+  --field-bg--color: #f7f7fb;
+  --button-bg-color: #3470ff;
+  --accent-button-bg-color: rgba(11, 68, 205, 1);
+  --parametr-text-color: rgba(18, 20, 23, 0.2);
+
+  --primary-text-color: #121417;
+  --description-text-color: #8a8a89;
+  --card--details-text--color: rgba(18, 20, 23, 0.5);
+
+  --heart-outline-color: rgba(255, 255, 255, 0.8);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Manrope, sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  width: 8px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--card--details-text--color);
+}
+
+.container {
+  width: 1208px;
+  padding: 0px 12px;
+  margin: 0px auto;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+p {
+  margin: 0px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.korobka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.text {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  height: 200px;
+
+  margin-top: 60px;
+
+  background-color: rgba(18, 20, 23, 0.1);
+  border-radius: 15px;
+}
+
+.about {
+  width: 100%;
+  background-color: rgba(18, 20, 23, 0.1);
+  border-radius: 15px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.about__description {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+
+  margin-bottom: 40px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info__title {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--button-bg-color);
+
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 120px;
+
+  list-style: disc;
+  margin-left: 23px;
+}
+
+.info__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.info__block {
+  width: 515px;
+  height: 200px;
+
+  padding: 15px;
+
+  border-radius: 15px;
+  background-color: rgba(18, 20, 23, 0.2);
+}
+
+.garanty {
+  margin-top: 20px;
+}
+
+.info__text {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.cars {
+  padding-top: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.photo__block {
+  width: 515px;
+  height: 300px;
+
+  border-radius: 15px;
+  background-color: rgba(18, 20, 23, 0.2);
 }

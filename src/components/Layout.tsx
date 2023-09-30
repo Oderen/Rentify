@@ -1,12 +1,12 @@
 import React, { Suspense }from 'react'
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from './Header';
 
 const Layout: React.FC = () => {
     return (
       <div>
         <header>
-          <Link to="/">Home</Link>
-          <Link to="/catalog">Catalog</Link>
+          <Header />
         </header>
         <Suspense>
           <Outlet />

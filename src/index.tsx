@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <BrowserRouter basename="/renty">
+        <BrowserRouter basename="/rentify">
           <App />
         </BrowserRouter>
       </PersistGate>

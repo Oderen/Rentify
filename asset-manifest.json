@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rentify/static/css/main.0266ae0e.css",
-    "main.js": "/rentify/static/js/main.2669f018.js",
+    "main.js": "/rentify/static/js/main.24589f34.js",
     "static/js/277.6b18812c.chunk.js": "/rentify/static/js/277.6b18812c.chunk.js",
     "static/css/896.a34beeba.chunk.css": "/rentify/static/css/896.a34beeba.chunk.css",
     "static/js/896.d3491114.chunk.js": "/rentify/static/js/896.d3491114.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/2023-tesla-model-x-101-1671475309.jpeg": "/rentify/static/media/2023-tesla-model-x-101-1671475309.b14ae4beff78ccf2d15a.jpeg",
     "index.html": "/rentify/index.html",
     "main.0266ae0e.css.map": "/rentify/static/css/main.0266ae0e.css.map",
-    "main.2669f018.js.map": "/rentify/static/js/main.2669f018.js.map",
+    "main.24589f34.js.map": "/rentify/static/js/main.24589f34.js.map",
     "277.6b18812c.chunk.js.map": "/rentify/static/js/277.6b18812c.chunk.js.map",
     "896.a34beeba.chunk.css.map": "/rentify/static/css/896.a34beeba.chunk.css.map",
     "896.d3491114.chunk.js.map": "/rentify/static/js/896.d3491114.chunk.js.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.0266ae0e.css",
-    "static/js/main.2669f018.js"
+    "static/js/main.24589f34.js"
   ]
 }

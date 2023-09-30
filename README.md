@@ -2,11 +2,11 @@
 
 Rentify is the best and most affordable car rental service in Ukraine.
 
-![Alt text](image.png)
+![Alt text](./assets/image.png)
 
-![Alt text](image-1.png)
+![Alt text](./assets/image-1.png)
 
-![Alt text](image-2.png)
+![Alt text](./assets/image-2.png)
 
 # Functionality
 

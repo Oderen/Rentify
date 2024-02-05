@@ -50,7 +50,7 @@ const CarItem: React.FC<CatItemProps> = ({ setCurrentId, carData }) => {
           index
         ) => {
           /* eslint-disable */
-            const [_, city = '', country = ''] = address.split(',');
+          const [_, city = '', country = ''] = address.split(',');
           /* eslint-enable */
           const formattedMileage = new Intl.NumberFormat('en-US').format(
             mileage
@@ -65,14 +65,25 @@ const CarItem: React.FC<CatItemProps> = ({ setCurrentId, carData }) => {
             formattedMileage,
             accessories[0],
           ];
+
+          const carPhoto = img ? `${img}` : `${photoLink}`;
+
           return (
             <li className={css.item} key={`${id}-${index}`}>
-              <div className={css.item__image}>
-                <img
-                  className={css.item__image}
-                  src={img ? `${img}` : `${photoLink}`}
-                  alt={`${make}`}
-                />
+              <div className={css.item__imgWrapper}>
+                {carPhoto !== '' ? (
+                  <img
+                    className={css.item__image}
+                    src={img ? `${img}` : `${photoLink}`}
+                    alt={`${make}`}
+                  />
+                ) : (
+                  <img
+                    className={css.imageSkeleton}
+                    src={require('../../images/car-sleketon.png')}
+                    alt={`${make}`}
+                  />
+                )}
                 <button
                   className={css.likeBtn}
                   onClick={() => {
@@ -93,10 +104,10 @@ const CarItem: React.FC<CatItemProps> = ({ setCurrentId, carData }) => {
               <div className={css.title}>
                 <p className={css.title__text}>
                   {make}{' '}
-                  <span className={css['title__text--accent']}>{model}</span>,
+                  <span className={css['title__text--accent']}>{model}</span>,{' '}
                   {year}
                 </p>
-                <p className={css.title__text}>{rentalPrice}</p>
+                <p className={css.title__text}>{`${rentalPrice}/hr`}</p>
               </div>
 
               <ul className={css.info__list}>
@@ -108,6 +119,7 @@ const CarItem: React.FC<CatItemProps> = ({ setCurrentId, carData }) => {
                   );
                 })}
               </ul>
+
               <button
                 type="button"
                 className={css.item__button}
